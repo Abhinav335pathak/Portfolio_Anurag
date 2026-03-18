@@ -57,11 +57,7 @@ const Footer = () => {
                     Terms &amp; Conditions
                   </a>
                 </li>
-                <li className="mb-2">
-                  <a href="/refundpolicy" className="hover:underline text-sm lg:text-base">
-                    Refunds/Cancellations
-                  </a>
-                </li>
+                
               </ul>
             </div>
           </div>

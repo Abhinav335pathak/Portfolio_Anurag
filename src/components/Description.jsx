@@ -49,7 +49,7 @@ const Description = ({ title, price, mrp, description, category, apk_link, onQua
             onSetOrderedQuant(onQuant);
             const currentUrl = encodeURIComponent(window.location.href);
             // const whatsappUrl = `https://wa.me/+91${phone_number}?text=Hello,%20I%20want%20to%20buy%20this%20product:%20${currentUrl}`;
-            const whatsappUrl = `https://wa.me/+918433233662?text=Hello,%20I%20want%20to%20buy%20this%20product:%20${currentUrl}`;
+            const whatsappUrl = `https://wa.me/+918757772761?text=Hello,%20I%20want%20to%20buy%20this%20product:%20${currentUrl}`;
             window.open(whatsappUrl, "_blank");
           }}
         >

@@ -103,7 +103,7 @@ const ContactUsPage = ({ crosses }) => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://localhost:5000/api/contact", {
+      const response = await fetch(import.meta.env.VITE_BACKEND_URL + "/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -171,7 +171,7 @@ const ContactUsPage = ({ crosses }) => {
       formData.append("subject", selectedSubject);
       formData.append("message", message);
 
-      const response = await fetch("http://localhost:5000/api/contact", {
+      const response = await fetch(import.meta.env.VITE_BACKEND_URL + "/api/contact", {
         method: "POST",
         body: formData
       });
@@ -215,7 +215,7 @@ const ContactUsPage = ({ crosses }) => {
   setIsSubmitting(true);
 
   try {
-    const response = await fetch("http://localhost:5000/api/contact", {
+    const response = await fetch(import.meta.env.VITE_BACKEND_URL + "/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

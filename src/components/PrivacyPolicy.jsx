@@ -41,8 +41,8 @@ const PrivacyPolicy = () => {
                                     <bdt className="question">
                                         {websiteName}
                                     </bdt>{" "}
-                                    (<bdt className="block-component" />'<strong>we</strong>', '
-                                    <strong>us</strong>', or '<strong>our</strong>'
+                                    (<bdt className="block-component" />'<strong>I</strong>', '
+                                    <strong>me</strong>', or '<strong>we</strong>'
                                     <bdt className="else-block" />
                                 </span>
                                 <span data-custom-class="body_text">
@@ -9395,12 +9395,7 @@ const PrivacyPolicy = () => {
                                                                                                                                                 >
                                                                                                                                                     <span data-custom-class="body_text">
                                                                                                                                                         <bdt className="question">
-                                                                                                                                                            Star
-                                                                                                                                                            Plus
-                                                                                                                                                            Electronics,
-                                                                                                                                                            Mamu
-                                                                                                                                                            Bhanja,
-                                                                                                                                                            Aligarh
+                                                                                                                                                            Muradnagar
                                                                                                                                                         </bdt>
                                                                                                                                                         <span
                                                                                                                                                             style={{
@@ -9432,7 +9427,7 @@ const PrivacyPolicy = () => {
                                                                                                                                                 >
                                                                                                                                                     <span data-custom-class="body_text">
                                                                                                                                                         <bdt className="question">
-                                                                                                                                                            Aligarh
+                                                                                                                                                            Ghaziabad
                                                                                                                                                         </bdt>
                                                                                                                                                         <span
                                                                                                                                                             style={{
@@ -9454,7 +9449,7 @@ const PrivacyPolicy = () => {
                                                                                                                                                                 <bdt className="statement-end-if-in-editor" />
                                                                                                                                                                 <bdt className="block-component" />{" "}
                                                                                                                                                                 <bdt className="question">
-                                                                                                                                                                    202001
+                                                                                                                                                                    201206
                                                                                                                                                                 </bdt>
                                                                                                                                                                 <bdt className="statement-end-if-in-editor" />
                                                                                                                                                                 <bdt className="block-component" />

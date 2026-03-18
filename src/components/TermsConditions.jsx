@@ -49,7 +49,7 @@ const TermsConditions = () => {
                             <strong>
                                 <span style={{ fontSize: 15 }}>
                                     <span data-custom-class="subtitle">
-                                        Last updated <bdt className="question">May 11, 2024</bdt>
+                                        Last updated <bdt className="question">March 18, 2026</bdt>
                                     </span>
                                 </span>
                             </strong>
@@ -102,7 +102,7 @@ const TermsConditions = () => {
                                         fontWeight: "bolder"
                                     }}
                                 >
-                                    LEGAL NAME : Vishnu Kumar Gupta
+                                    LEGAL NAME : Anurag Shrivastav
                                 </strong>
                             </span>
                         </span>
@@ -123,7 +123,7 @@ const TermsConditions = () => {
                                         fontWeight: "bolder"
                                     }}
                                 >
-                                    BUSINESS ADDRESS : Mamu Bhanja, Koil, Aligarh 202001, Uttar Pradesh, India
+                                    BUSINESS ADDRESS : Muradnagar,Ghaziabad, 201206, Uttar Pradesh, India
                                 </strong>
                             </span>
                         </span>
@@ -239,7 +239,7 @@ const TermsConditions = () => {
                             }}
                         >
                             <span style={{ boxSizing: "border-box", lineHeight: "16.1px" }}>
-                                We are&nbsp;
+                                I am&nbsp;
                                 <bdt
                                     className="block-container question question-in-editor"
                                     style={{
@@ -299,7 +299,20 @@ const TermsConditions = () => {
                                         fontWeight: "bolder"
                                     }}
                                 >
-                                    we
+                                    I
+                                </strong>
+                                ," "
+                                <strong
+                                    style={{
+                                        backgroundColor: "transparent",
+                                        boxSizing: "border-box",
+                                        color: "rgb(189, 189, 189) !important",
+                                        
+                                        fontSize: "14px !important",
+                                        fontWeight: "bolder"
+                                    }}
+                                >
+                                    me
                                 </strong>
                                 ," "
                                 <strong
@@ -313,19 +326,6 @@ const TermsConditions = () => {
                                     }}
                                 >
                                     us
-                                </strong>
-                                ," "
-                                <strong
-                                    style={{
-                                        backgroundColor: "transparent",
-                                        boxSizing: "border-box",
-                                        color: "rgb(189, 189, 189) !important",
-                                        
-                                        fontSize: "14px !important",
-                                        fontWeight: "bolder"
-                                    }}
-                                >
-                                    our
                                 </strong>
                                 "
                                 <bdt
@@ -460,7 +460,7 @@ const TermsConditions = () => {
                             }}
                         >
                             <span style={{ boxSizing: "border-box", lineHeight: "16.1px" }}>
-                                We operate{" "}
+                                I operate{" "}
                                 <bdt
                                     className="block-component"
                                     style={{
