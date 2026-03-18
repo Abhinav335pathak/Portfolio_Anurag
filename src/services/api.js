@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const API_BASE = import.meta.env.BACKEND_URL || "http://localhost:5000";
+const API_BASE = import.meta.env.BACKEND_URL || "https://anurag-portfolio-ouoc.onrender.com";
 
 const api = axios.create({
   baseURL: API_BASE, // /api removed from here
