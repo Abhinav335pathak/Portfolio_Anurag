@@ -1,0 +1,11 @@
+# .htaccess in public_html directory
+
+# Disable directory listing
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    Options -MultiViews
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.html [QSA,L]
+</IfModule>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./src/assets/sh_developer_logo.svg"
+    />
+    <meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-react-helmet="true" id="websiteTitle">SH DévSolutions</title>
+
+    <meta data-react-helmet="true" name="description" content="Explore our products at SH DévSolutions. Find the Perfect Solution for your App & Website Development Needs." />
+
+    <meta data-react-helmet="true" property="og:image" content="https://shdevsolutions.com/uploadFile/uploads/sh_developer_banner__big.png" />
+
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '8984602278321977');
+  fbq('track', 'PageView_SH');
+</script>
+<!-- End Meta Pixel Code -->
+
+  </head>
+  <body>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=8984602278321977&ev=PageView_SH&noscript=1"/>
+    </noscript>
+    <div id="root"></div>
+    <script type="module">
+      // Import the named export from the constants file
+      import { websiteName } from './src/constants/index';
+
+      // Set the website name dynamically
+      document.getElementById('websiteTitle').innerText = websiteName;
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
