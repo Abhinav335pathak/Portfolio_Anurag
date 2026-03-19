@@ -136,6 +136,7 @@ import Heading from "./Heading";
 import Section from "./Section";
 import Carousel from "./Carousel";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const Products = () => {
 
@@ -169,7 +170,7 @@ const Products = () => {
 
         <div className="flex flex-wrap gap-10 justify-center">
 
-          {products.slice(0, 6).map((item, index) => {
+          {products.map((item, index) => {
 
             const images =
               item.featured_images > 0
@@ -207,6 +208,7 @@ const Products = () => {
                           loading="lazy"
                         />
                       ))}
+                     
 
                     </Carousel>
 
@@ -228,13 +230,11 @@ const Products = () => {
 
                     <div className="mt-5 flex items-center justify-between">
 
-                      <Button
-                        className="flex items-center"
-                        href={`/product/${item._id || item.id}`}
-                        white
-                      >
-                        View
-                      </Button>
+                     <Link to={`/product/${item._id || item.id}`}>
+  <Button className="flex items-center" white>
+    View
+  </Button>
+</Link>
 
                     </div>
 
@@ -250,9 +250,11 @@ const Products = () => {
 
         {/* See More Button */}
         <div className="w-full flex justify-center mt-10">
-          <Button className="w-full max-w-xs text-white" href="/products">
-            See More
-          </Button>
+         <Link to="/products">
+  <Button className="w-full max-w-xs text-white">
+    See More
+  </Button>
+</Link>
         </div>
 
       </div>

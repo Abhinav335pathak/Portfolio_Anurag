@@ -67,7 +67,7 @@ export const hero_banners = ["https://shdevsolutions.com/uploadFile/uploads/sh_d
 
 export const websiteName = "Anurag'sdev";
 
-export const websiteUrl = "https://shdevsolutions.com";
+export const websiteUrl = "https://portfolio-anurag-seven.vercel.app";
 
 export const techStackContent = [
   {
