@@ -7,6 +7,7 @@ import ClipPath from "../assets/svg/ClipPath";
 import Carousel from "./Carousel";
 import Button from "./Button";
 import useGetProducts from "../data/useGetProduct";
+import { Link } from "react-router-dom";
 
 const AllProducts = () => {
   const { products = [], loading, error } = useGetProducts();
@@ -85,13 +86,12 @@ const AllProducts = () => {
                     <div className="mt-5 flex items-center justify-between">
                      
 
-                      <Button
-                        className="flex items-center"
-                        href={`/product/${item._id}`}
-                        white
-                      >
-                        View
-                      </Button>
+                       <Link to={`/product/${item._id || item.id}`}>
+                       <Button className="flex items-center" white>
+                         View
+                       </Button>
+                     </Link>
+
                     </div>
                   </div>
                 </div>
