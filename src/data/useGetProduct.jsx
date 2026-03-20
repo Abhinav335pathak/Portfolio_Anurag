@@ -11,8 +11,9 @@ export const useGetProducts = () => {
       try {
         const response = await getProducts();
         setProducts(response.data);
+        console.log("Fetched products:", response.data);
       } catch (err) {
-        let errorMessage = "Failed to fetch projects";
+        let errorMessage = "Failed to fetch products";
         
         if (err.response?.status === 503) {
           errorMessage = "Server is temporarily unavailable. Please try again in a moment.";

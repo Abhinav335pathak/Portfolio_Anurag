@@ -70,7 +70,7 @@ const Reviews = () => {
 
     <div className="relative space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
       <img
-        className="rounded"
+        className="rounded w-full m-4 h-60 object-cover"
         src={item.image?.url}
         alt="Review"
       />

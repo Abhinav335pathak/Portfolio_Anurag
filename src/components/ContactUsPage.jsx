@@ -30,6 +30,8 @@ import { fiverr } from "../assets";
 
 const ContactUsPage = ({ crosses }) => {
 
+  const API_BASE ="https://anurag-portfolio-ouoc.onrender.com"; // Ensure this is the correct backend URL
+
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -103,7 +105,7 @@ const ContactUsPage = ({ crosses }) => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch(import.meta.env.VITE_BACKEND_URL + "/api/contact", {
+      const response = await fetch(API_BASE + "/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -171,7 +173,7 @@ const ContactUsPage = ({ crosses }) => {
       formData.append("subject", selectedSubject);
       formData.append("message", message);
 
-      const response = await fetch(import.meta.env.VITE_BACKEND_URL + "/api/contact", {
+      const response = await fetch(API_BASE + "/api/contact", {
         method: "POST",
         body: formData
       });
@@ -215,7 +217,7 @@ const ContactUsPage = ({ crosses }) => {
   setIsSubmitting(true);
 
   try {
-    const response = await fetch(import.meta.env.VITE_BACKEND_URL + "/api/contact", {
+    const response = await fetch(API_BASE + "/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
