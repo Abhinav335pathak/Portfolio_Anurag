@@ -43,7 +43,7 @@ const Header = () => {
           </a>
           <span className="text-white ml-3 font-semibold text-xl lg:text-2xl xl:text-3xl">{websiteName}</span>
         </div> */}
-        <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-2">
+        <div className="flex items-center px-2 lg:px-7.5 xl:px-10 max-lg:py-2">
 
   <div className="flex items-center gap-3">
     

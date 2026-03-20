@@ -299,8 +299,11 @@ ${message}
                     <strong>+91 {phone_number}</strong>
                   </a>
                 </li>
-                <li className="flex items-center max-lg:justify-center">
-                  <LocationIcon />
+                {/* <li className="flex items-center px-5 -mt-4 max-lg:justify-center"> */}
+                <li className="flex items-center px-5 -mt-4 max-lg:justify-center">
+                 <div className="-mt-4">
+    <LocationIcon />
+  </div>
                   <strong className="text-white text-sm ml-3">{address}</strong>
                 </li>
               </ul>
