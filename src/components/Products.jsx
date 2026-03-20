@@ -180,7 +180,7 @@ const Products = () => {
             return (
               <div
                 key={item._id || item.id || index}
-                className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem] overflow-hidden bg-conic-gradient w-full"
+                className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] max-w-[32rem] md:max-w-[28rem] overflow-hidden bg-conic-gradient w-full"
                 style={{
                   backgroundColor: `rgb(21 19 29 / var(--tw-bg-opacity))`,
                   borderRadius: "1rem",

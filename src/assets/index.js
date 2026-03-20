@@ -1,5 +1,5 @@
-import logo from "./sh_developer_logo.svg";
-import logoCircle from "./sh_developer_logo_circle.png";
+import logo from "./image.png";
+import logoCircle from "./Gemini_Generated_Image_grm3q5grm3q5grm3-modified.png";
 import loading from "./loading.png";
 import curve1 from "./curve-1.svg";
 import curve2 from "./curve-2.svg";

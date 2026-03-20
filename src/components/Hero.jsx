@@ -52,19 +52,20 @@ const Hero = () => {
           </span>
         </h1>
 
-        <p className="body-1 text-wrap text-n-2 lg:mb-6 text-xs md:text-lg">
+        <p className="body-1 text-wrap text-n-2 lg:mb-6 text-lg md:text-lg mt-4 mb-6">
           Transforming Complex Ideas into Fluid Digital Realities.
           <br />
+          
           Crafting Intuitive Android Solutions for the Modern On-Demand Economy
         </p>
 
-        <Button className="md:mt-3 lg:mt-0" href="#readyToUse" white>
+        <Button className="md:mt-3 lg:mt-0 text-base" href="#readyToUse" white>
           Get Started
         </Button>
       </div>
 
       {/* RIGHT IMAGE */}
-      <div className="w-[60%] lg:w-[40%] mt-6 lg:mt-0">
+      <div className="w-[60%] lg:w-[40%] mt-6 lg:mt-0 mb-8 lg:mb-0">
         <img src={heroImage} className="w-full h-auto" alt="Hero" />
       </div>
     </div>

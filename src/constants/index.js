@@ -32,7 +32,7 @@ import {
 export const whatsapp_link = "https://wa.me/+918757772761";
 export const instagram_link = "https://www.instagram.com/anurag_shrivastav18/";
 export const telegram_link = "https://t.me/Anurag_toxic";
-export const fiverr_link = "https://www.fiverr.com/sh_developer_";
+export const fiverr_link = "https://www.fiverr.com/dev_anurag18/buying?source=avatar_menu_profile";
 
 export const phone_number = "8757772761";
 export const email = "anurag13360@gmail.com";

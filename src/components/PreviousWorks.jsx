@@ -80,7 +80,7 @@ const { previousWorks, loading, error } = useGetPreviousWorks();
         <Slider {...settings}>
           {previousWorks.map((item) => (
             <div key={item.id} className="px-4">
-              <div className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem] overflow-hidden bg-conic-gradient" style={{
+              <div className="block relative p-0.5 bg-no-repeat m-auto bg-[length:100%_100%] max-w-[28rem] md:max-w-[24rem] overflow-hidden bg-conic-gradient" style={{
                 backgroundColor: `rgb(21 19 29 / var(--tw-bg-opacity))`,
                 borderRadius: "1rem",
               }}>

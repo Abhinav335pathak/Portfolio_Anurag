@@ -37,12 +37,32 @@ const Header = () => {
         }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-2">
-        <div className="flex items-center">
+        {/* <div className="flex items-center">
           <a className="block w-[3.1rem] border-2 border-gray-200 rounded-full overflow-hidden" href="/">
             <img src={logo} width={50} height={50} alt={websiteName} className="w-full h-full object-cover" />
           </a>
           <span className="text-white ml-3 font-semibold text-xl lg:text-2xl xl:text-3xl">{websiteName}</span>
-        </div>
+        </div> */}
+        <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-2">
+
+  <div className="flex items-center gap-3">
+    
+    <a href="/" className="block w-[3.5rem] md:w-[4rem] lg:w-[4.5rem]">
+      <img
+        src={logo}
+        alt={websiteName}
+        className="w-full h-auto object-contain"
+      />
+    </a>
+
+    <span className="text-white font-semibold text-xl lg:text-2xl xl:text-3xl">
+      {websiteName}
+    </span>
+
+  </div>
+
+</div>
+        
         <nav
           className={`${openNavigation ? "flex" : "hidden"
             } fixed top-[4.2rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
@@ -79,7 +99,7 @@ const Header = () => {
         </Button> */}
 
         <Button className="hidden lg:flex" href="https://www.linkedin.com/in/anurag-shrivastav-b7a616327" target={"_blank"}>
-          Linkdin
+          Linkedin
         </Button>
 
         <Button

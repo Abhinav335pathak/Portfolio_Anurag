@@ -1,14 +1,12 @@
-import { logoCircle, check, bg_light_pattern } from "../assets";
+import { logoCircle, check } from "../assets";
 import { techStackContent } from "../constants";
-import Button from "./Button";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/CurveLines";
 import { useEffect, useRef, useState } from "react";
 import useGetSkills from "../data/useGetSkill";
 
 const TechStacks = () => {
-
-  const { skills, loading, error } = useGetSkills();
+  const { skills = [], loading } = useGetSkills();
 
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -16,76 +14,82 @@ const TechStacks = () => {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+        if (entry.isIntersecting) setIsVisible(true);
       });
     });
 
     if (ref.current) observer.observe(ref.current);
-
-    return () => {
-      observer.disconnect();
-    };
+    return () => observer.disconnect();
   }, []);
 
   return (
-    <Section customPaddings="pt-10 pb-14 lg:py-16 xl:py-20" crosses>
-      <div className="container lg:flex pl-40">
-        <div className="max-w-[25rem]">
-          <h2 className="h1 mb-4 md:mb-8">
+    <Section customPaddings="py-16 lg:py-20" crosses>
+      
+      {/* MAIN CONTAINER */}
+      <div className="container grid lg:grid-cols-2 gap-10 items-center">
+
+        {/* LEFT CONTENT */}
+        <div className="max-w-lg">
+          <h2 className="h1 mb-6">
             Our Toolbox for Your Product Excellence
           </h2>
 
-          <ul className="max-w-[22rem] mb-10 md:mb-14">
-            {techStackContent.slice(0,6).map((item) => (
-              <li className="mb-3 py-3" key={item.id}>
+          <ul className="space-y-4">
+            {techStackContent.map((item) => (
+              <li key={item.id}>
                 <div className="flex items-center">
-                  <img src={check} width={24} height={24} alt="check" />
-                  <h6 className="body-2 ml-5">{item.title}</h6>
+                  <img src={check} width={20} height={20} alt="check" />
+                  <h6 className="body-2 ml-4">{item.title}</h6>
                 </div>
                 {item.text && (
-                  <p className="body-2 mt-3 text-n-4">{item.text}</p>
+                  <p className="body-2 mt-2 text-n-4 ml-6">
+                    {item.text}
+                  </p>
                 )}
               </li>
             ))}
           </ul>
         </div>
 
+        {/* RIGHT CIRCLE */}
         <div
           ref={ref}
-          className={`lg:ml-auto xl:w-[38rem] mt-4 transition-opacity duration-500 transform ${
+          className={`flex justify-center items-center transition-all duration-500 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="relative left-1/2 mt-12 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale-75 md:scale-100">
-            <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
-              <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
+          <div className="relative flex w-[20rem] md:w-[24rem] aspect-square border border-n-6 rounded-full">
+
+            {/* INNER CIRCLE */}
+            <div className="flex w-56 aspect-square m-auto border border-n-6 rounded-full">
+              <div className="w-[5rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
-                  <img
-                    src={logoCircle}
-                    width={66}
-                    height={66}
-                    alt="logo"
-                  />
+                  <img src={logoCircle} width={60} height={60} alt="logo" />
                 </div>
               </div>
             </div>
 
+            {/* SKILLS */}
             <ul>
               {!loading &&
-                skills?.map((app, index) => (
+                skills.map((app, index) => (
                   <li
                     key={app._id}
-                    className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${index * 45}`}
+                    className="absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom"
+                    style={{
+                      transform: `rotate(${index * (360 / skills.length)}deg)`
+                    }}
                   >
                     <div
-                      className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${index * 45}`}
+                      className="relative -top-[1.6rem] flex w-[3rem] h-[3rem] bg-n-7 border border-white/10 rounded-xl"
+                      style={{
+                        transform: `rotate(-${index * (360 / skills.length)}deg)`
+                      }}
                     >
                       <img
                         className="m-auto"
-                        width={34}
-                        height={36}
+                        width={28}
+                        height={28}
                         alt={app.title}
                         src={app.icon}
                       />
