@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-
+import { NavLink } from "react-router-dom";
 import { logo } from "../assets";
 import { navigation } from "../constants";
 import { websiteName } from "../constants";
@@ -48,20 +48,21 @@ const Header = () => {
             } fixed top-[4.2rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
-            {navigation.map((item) => (
-              <a
-                key={item.id}
-                href={item.url}
-                onClick={handleClick}
-                className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${item.onlyMobile ? "lg:hidden" : ""
-                  } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${item.url === pathname.hash
-                    ? "z-2 lg:text-n-1"
-                    : "lg:text-n-1/50"
-                  } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
-              >
-                {item.title}
-              </a>
-            ))}
+         {navigation.map((item) => (
+  <NavLink
+    key={item.id}
+    to={item.url}
+    onClick={handleClick}
+    className={({ isActive }) =>
+      `block relative font-code text-2xl uppercase transition-colors hover:text-color-1 
+      ${item.onlyMobile ? "lg:hidden" : ""} 
+      px-6 py-6 md:py-8 lg:text-xs lg:font-semibold lg:leading-5 xl:px-12
+      ${isActive ? "z-2 lg:text-n-1" : "lg:text-n-1/50 lg:hover:text-n-1"}`
+    }
+  >
+    {item.title}
+  </NavLink>
+))}
           </div>
 
           <HamburgerMenu />
