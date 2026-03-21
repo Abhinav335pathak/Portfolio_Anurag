@@ -300,8 +300,8 @@ ${message}
                   </a>
                 </li>
                 {/* <li className="flex items-center px-5 -mt-4 max-lg:justify-center"> */}
-                <li className="flex items-center  -mt-4 max-lg:justify-center">
-                 <div className="-mt-2">
+                <li className="flex items-center  -mt-2 max-lg:justify-center">
+                 <div className="mb-6 lg:mb-0 md:mb-0">
     <LocationIcon />
   </div>
                   <strong className="text-white text-sm ml-3">{address}</strong>
