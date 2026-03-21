@@ -29,7 +29,7 @@ const TechStacks = () => {
       <div className="container grid lg:grid-cols-2 gap-10 items-center">
 
         {/* LEFT CONTENT */}
-        <div className="max-w-lg">
+        <div className="max-w-lg ml-0 md:ml-24 lg:ml-24">
           <h2 className="h1 mb-6">
             Our Toolbox for Your Product Excellence
           </h2>
@@ -46,6 +46,7 @@ const TechStacks = () => {
                     {item.text}
                   </p>
                 )}
+                <br/>
               </li>
             ))}
           </ul>

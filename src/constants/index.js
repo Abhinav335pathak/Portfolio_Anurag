@@ -65,7 +65,7 @@ export const navigation = [
 
 export const hero_banners = ["https://shdevsolutions.com/uploadFile/uploads/sh_dev_banner_1.png", "https://shdevsolutions.com/uploadFile/uploads/sh_banner_2.png"];
 
-export const websiteName = "Anurag'sdev";
+export const websiteName = "Anurag Dev";
 
 export const websiteUrl = "https://contactanurag.in";
 

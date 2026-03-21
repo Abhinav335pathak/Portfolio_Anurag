@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import Button from "./Button";
 import Section from "./Section";
-import { heroImage } from "../assets";
+import { heroImage ,heropage } from "../assets";
 // import Carousel from "./Carousel";
 import Typewriter from "typewriter-effect";
 import SectionSvg from "../assets/svg/SectionSvg";
@@ -66,7 +66,7 @@ const Hero = () => {
 
       {/* RIGHT IMAGE */}
       <div className="w-[60%] lg:w-[40%] mt-6 lg:mt-0 mb-8">
-        <img src={heroImage} className="w-full h-auto" alt="Hero" />
+        <img src={heropage} className="w-full h-auto" alt="Hero" />
       </div>
     </div>
   </Section>
