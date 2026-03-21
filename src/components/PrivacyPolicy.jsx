@@ -24,7 +24,7 @@ const PrivacyPolicy = () => {
                             <strong>
                                 <span style={{ fontSize: 15 }}>
                                     <span data-custom-class="subtitle">
-                                        Last updated <bdt className="question">May 11, 2024</bdt>
+                                        Last updated <bdt className="question">March 20, 2026</bdt>
                                     </span>
                                 </span>
                             </strong>

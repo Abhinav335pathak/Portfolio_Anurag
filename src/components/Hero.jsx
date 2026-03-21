@@ -65,7 +65,7 @@ const Hero = () => {
       </div>
 
       {/* RIGHT IMAGE */}
-      <div className="w-[60%] lg:w-[40%] mt-6 lg:mt-0 mb-8 lg:mb-0">
+      <div className="w-[60%] lg:w-[40%] mt-6 lg:mt-0 mb-8">
         <img src={heroImage} className="w-full h-auto" alt="Hero" />
       </div>
     </div>

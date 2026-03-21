@@ -11,6 +11,7 @@ export const useGetPreviousWorks = () => {
       try {
         const response = await getApps();
         setPreviousWorks(response.data);
+        console.log("Fetched previous works:", response.data);
       } catch (err) {
         let errorMessage = "Failed to fetch previous works";
         

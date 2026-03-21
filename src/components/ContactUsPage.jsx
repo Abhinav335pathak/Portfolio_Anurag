@@ -31,7 +31,7 @@ import { fiverr } from "../assets";
 const ContactUsPage = ({ crosses }) => {
 
   const API_BASE ="https://anurag-portfolio-ouoc.onrender.com"; // Ensure this is the correct backend URL
-
+// const API_BASE = "http://localhost:5000"; // Use env variable or fallback to localhost
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -300,8 +300,8 @@ ${message}
                   </a>
                 </li>
                 {/* <li className="flex items-center px-5 -mt-4 max-lg:justify-center"> */}
-                <li className="flex items-center px-5 -mt-4 max-lg:justify-center">
-                 <div className="-mt-4">
+                <li className="flex items-center  -mt-4 max-lg:justify-center">
+                 <div className="-mt-2">
     <LocationIcon />
   </div>
                   <strong className="text-white text-sm ml-3">{address}</strong>

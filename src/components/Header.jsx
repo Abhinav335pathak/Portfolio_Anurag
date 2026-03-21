@@ -47,7 +47,7 @@ const Header = () => {
 
   <div className="flex items-center gap-3">
     
-    <a href="/" className="block w-[3.5rem] md:w-[4rem] lg:w-[4.5rem]">
+    <a href="/" className="block w-[3.5rem] md:w-[4rem] lg:w-[4.5rem] rounded-full overflow-hidden">
       <img
         src={logo}
         alt={websiteName}
