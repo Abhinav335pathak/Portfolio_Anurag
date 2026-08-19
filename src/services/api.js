@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // "https://anurag-portfolio-ouoc.onrender.com" ||
-const API_BASE ="https://anurag-portfolio-ouoc.onrender.com"; // Ensure this is the correct backend URL
+const API_BASE ="https://anuragportfoliobackend.vercel.app"; // Ensure this is the correct backend URL
 // const API_BASE ="http://localhost:5000"; // Ensure this is the correct backend URL 
 
 const api = axios.create({
